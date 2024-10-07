@@ -2,13 +2,16 @@ const mongoose =require("mongoose")
 
 const userSchema= new mongoose.Schema({
     firstName:{
-        type: String
+        type: String,
+         
     },
     lastName:{
         type: String
     },
     emailId:{
-        type: String
+        type: String,
+       
+
     },
     password:{
         type: String
@@ -21,7 +24,11 @@ const userSchema= new mongoose.Schema({
     },
     
     
+},{
+timestamps:true
+
 })
+
 
 
 

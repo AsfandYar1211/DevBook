@@ -5,11 +5,11 @@ const ValidateData=(req )=>{
 
    if (!firstName ||!lastName){
      //res.status(400).send("invalid.");
-    return("Invalid")
+    return("Invalid name")
    }
    else if (!validator.isEmail(emailId)){
     // res.status(400).send("Invalid Cridentila");
-     return("Invalid")
+     return("Invalid email")
    }
    else if (!validator.isStrongPassword(password)){
    // res.status(400).send("password is not strong enough");
